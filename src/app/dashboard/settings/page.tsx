@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Wallet, Cog, BellRing, Smartphone, Globe, Shield, User } from 'lucide-react';
+import { Wallet, Cog, BellRing, Smartphone, Globe, Shield, User, ArrowRight, Terminal, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SettingsPage() {
   const [notifications, setNotifications] = useState(true);
@@ -37,10 +38,11 @@ export default function SettingsPage() {
                 <input type="text" defaultValue="Design Studio XYZ" className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-zap-orange/50 outline-none transition-colors" />
              </div>
              <div className="space-y-2">
-                <label className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Twitter / X Handle</label>
+                <label className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Store Handle</label>
                 <div className="flex items-center bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-sm group focus-within:border-zap-orange/50 transition-colors">
-                  <span className="text-white/30 mr-2">@</span>
+                  <span className="text-white/30 mr-2">zaplink.xyz/store/</span>
                   <input type="text" defaultValue="design_studio" className="bg-transparent w-full outline-none" />
+                  <Link href="/store/design_studio" className="text-zap-gold hover:text-white transition-colors ml-2"><ExternalLink className="w-4 h-4" /></Link>
                 </div>
              </div>
           </div>

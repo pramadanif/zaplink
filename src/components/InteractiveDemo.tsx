@@ -46,20 +46,20 @@ export const InteractiveDemo: React.FC = () => {
             <span className="bg-gradient-to-r from-zap-gold via-zap-orange to-zap-red bg-clip-text text-transparent inline-block mt-1">Powered by Web3 rails.</span>
           </h2>
           <p className="text-white/50 text-lg leading-relaxed mb-8 font-normal">
-            Your clients shouldn't need to know what a blockchain is. Starkzap abstract away seed phrases, network fees, and bridging. They just log in and pay.
+            Your clients shouldn't need to know what a blockchain is. Starkzap abstract away technical complexity, extra fees, and processing delays. They just log in and pay.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center gap-4 text-sm font-medium text-white/80 group">
               <div className="w-8 h-8 rounded-full bg-zap-gold/10 flex items-center justify-center group-hover:scale-110 transition-transform"><ShieldCheck className="text-zap-gold w-4 h-4" /></div> 
-              Invisible Wallets via Social Login
+              Instant Social Login (No Setup Required)
             </li>
             <li className="flex items-center gap-4 text-sm font-medium text-white/80 group">
               <div className="w-8 h-8 rounded-full bg-zap-orange/10 flex items-center justify-center group-hover:scale-110 transition-transform"><ShieldCheck className="text-zap-orange w-4 h-4" /></div> 
-              Zero Platform & Network Fees
+              Zero Hidden Processing Fees
             </li>
             <li className="flex items-center gap-4 text-sm font-medium text-white/80 group">
               <div className="w-8 h-8 rounded-full bg-zap-red/10 flex items-center justify-center group-hover:scale-110 transition-transform"><ShieldCheck className="text-zap-red w-4 h-4" /></div> 
-              Instant File Unlocking upon Settlement
+              Instant Delivery upon Verification
             </li>
           </ul>
         </motion.div>

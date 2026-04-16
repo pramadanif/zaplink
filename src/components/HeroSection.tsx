@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Canvas } from '@react-three/fiber';
 import { LiquidSphere } from './LiquidSphere';
-import { ArrowRight, Terminal } from 'lucide-react';
+import { ArrowRight, Terminal, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
 export const HeroSection: React.FC = () => {
@@ -77,9 +77,9 @@ export const HeroSection: React.FC = () => {
           <Link href="/dashboard" className="interactive group w-full sm:w-auto px-8 py-4 bg-white text-zap-bg rounded-xl font-semibold text-sm transition-all hover:bg-white/90 flex items-center justify-center gap-2 hover:gap-3">
             Launch Platform <ArrowRight className="w-4 h-4" />
           </Link>
-          <button onClick={() => window.scrollTo({ top: document.body.scrollHeight/2, behavior: 'smooth' })} className="interactive group w-full sm:w-auto px-8 py-4 bg-white/[0.03] border border-white/10 text-white rounded-xl font-semibold text-sm backdrop-blur-md transition-all hover:bg-white/[0.08] hover:border-white/20 flex items-center justify-center gap-2">
+          <Link href="/commerce-kit" className="interactive group w-full sm:w-auto px-8 py-4 bg-white/[0.03] border border-white/10 text-white rounded-xl font-semibold text-sm backdrop-blur-md transition-all hover:bg-white/[0.08] hover:border-white/20 flex items-center justify-center gap-2">
             <Terminal className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" /> Integrate SDK
-          </button>
+          </Link>
         </motion.div>
       </div>
 

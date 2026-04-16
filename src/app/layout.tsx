@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: '--font-sans' });
+
 export const metadata: Metadata = {
-  title: "Zaplink | Liquid Utility • Starknet Native",
-  description: "Experience liquid utility and seamless interactions on Starknet.",
+  title: "Zaplink | B2B SaaS Infrastructure for Micro-Escrow",
+  description: "Secure, instant, and frictionless digital payments powered by Starkzap Commerce Kit.",
 };
 
 export default function RootLayout({
@@ -13,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased font-sans bg-zap-bg text-white selection:bg-zap-orange selection:text-white">
+      <body className={`${inter.variable} font-sans antialiased bg-zap-bg text-white selection:bg-zap-orange selection:text-white`}>
         {children}
       </body>
     </html>

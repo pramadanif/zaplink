@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --color-zap-bg: #050505;
+  --color-zap-red: #C40C0C;
+  --color-zap-orange: #FF6500;
+  --color-zap-deep-orange: #CC561E;
+  --color-zap-gold: #F6CE71;
+}
+
+@layer base {
+  body {
+    @apply bg-zap-bg text-white font-sans antialiased overflow-x-hidden selection:bg-zap-orange selection:text-white;
+    cursor: none; /* Hide default cursor for custom cursor */
+  }
+  
+  /* Hide scrollbar for a cleaner look */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+/* Utilities for text gradients */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-zap-red to-zap-orange;
+  }
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-zap-orange to-zap-gold;
+  }
+}
